@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers - @ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-5">
+            <div class="container">
+                <a class="navbar-brand" href="/">Flowers Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a asp-area="" asp-controller="PShop" asp-action="Index" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Arrangements" class="nav-link">Arrangements</a></li>
+                        <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">About</a></li>
+                        <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a asp-area="" asp-controller="PShop" asp-action="Index" class="nav-link"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="mt-5 mb-5">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="container text-center mb-5">
+                <p class="mb-1">🌺 Blooming Delights - Bringing Nature's Beauty to Your Doorstep</p>
+                <p class="mb-0">📞 Call us: +48 574 457 642 | 📍 Location: Głowackiego 26, Kraków, Poland 30-085</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Flowers Home
+
+                    </h5>
+                    <p>Bringing nature's beauty to your doorstep</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a asp-area="" asp-controller="Home" asp-action="About" class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">About Us</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact" class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Contact</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-black link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect</h5>
+                    
+                    <a href="https://www.instagram.com/las_home_flowers/" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/lashomeflowers" class="text-dark me-2"><i class="fab fa-facebook"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

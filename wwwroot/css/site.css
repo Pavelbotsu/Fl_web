@@ -1,0 +1,92 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1487015307662-6ce6210680f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    height: 70vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.product-card {
+    transition: transform 0.3s;
+    border: none;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+.flower-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.cta-button {
+    background: #ff7bac;
+    border: none;
+    padding: 10px 30px;
+}
+
+    .cta-button:hover {
+        background: #ff5d96;
+    }
+
+.sale-banner {
+    background: #ffeff4;
+    border-radius: 15px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.product-card {
+    transition: transform 0.3s;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+.hero-section {
+    background: url('https://source.unsplash.com/random/1920x1080/?flowers') center/cover;
+    height: 60vh;
+}
